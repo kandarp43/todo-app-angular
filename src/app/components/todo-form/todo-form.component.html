@@ -1,12 +1,16 @@
-<div class="input-group my-3 w-100">
-  <input
-    type="text"
-    name="todo"
-    placeholder="Enter a Todo"
-    class="form-control"
-    [(ngModel)]="todoTitle"
-  />
-  <div class="input-group-append">
-    <button (click)="handleAdd()" class="btn btn-primary">Add Todo</button>
+<form>
+  <div class="input-group my-3 w-60">
+    <input
+      type="text"
+      name="todo"
+      placeholder="Enter a Todo"
+      class="form-control"
+      [(ngModel)]="todoTitle"
+    />
+    <div class="input-group-append">
+      <button type="submit" (click)="handleAdd()" class="btn btn-primary">
+        Add Todo
+      </button>
+    </div>
   </div>
-</div>
+</form>

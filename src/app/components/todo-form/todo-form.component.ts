@@ -21,7 +21,9 @@ export class TodoFormComponent implements OnInit {
       date: new Date(),
       isComplete: false,
     };
-    this.todoService.addTodo(newTodo);
+    if (this.todoTitle.length > 2 && this.todoTitle.length < 50) {
+      this.todoService.addTodo(newTodo);
+    }
     this.todoTitle = '';
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from 'src/app/service/todo.service';
 import { Todo } from './../../model/Todo';
+
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
